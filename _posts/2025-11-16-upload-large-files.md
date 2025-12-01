@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Upload large files to github"
+title: "Upload Large Files to Github"
 ---
 
 ## GitHub 一般檔案上限
