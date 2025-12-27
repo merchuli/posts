@@ -1,4 +1,21 @@
 title: 我的部落格
 description: 歡迎來到我的技術與生活筆記
-theme: minima
+# theme: jekyll-theme-yat
+plugins:
+  - jekyll-remote-theme
+remote_theme: jekyll-theme-yat
 author: Merchu
+
+# 確保所有 posts 都顯示在主頁
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+
+# 預設配置，讓所有 posts 顯示在主頁
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      category: blog
